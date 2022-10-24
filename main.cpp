@@ -2,7 +2,10 @@
 // Due: October 25, 2022
 // By: Victor Huerta
 #include <iostream> 
+#include <queue>
+#include <vector>
 #include "input.h"
+#include "Patient.h"
 using namespace std;
 
 int menuOption();
@@ -39,6 +42,27 @@ int menuOption() {
 }
 
 void challenge1() {
-	cout << "\nHello\n";
+	system("cls");
+	cout << "\n\t2> Simulation of an emergency room (ER) using priority queue STL\n";
+
+	bool flag2 = true;
+
+	priority_queue<Patient> q;
+
+
+	/*do
+	{
+		cout << "\n\t\t  A> Register a patient";
+		cout << "\n\t\t  B> Transfer patient(s) to the designation";
+		cout << "\n\t\t  C> Display transferred patients";
+		cout << "\n\t\t  X> return\n";
+
+		switch (toupper(inputChar("\t\t  Option: ", "ABCX"))) {
+		case 'X': flag2 = false; break;
+		case 'A': cout << "\nHello"; break;
+		case 'B': cout << "\nHello Again"; break;
+		case 'C': cout << "\nHello Darling It's been a long time"; break;
+		}
+	} while (flag2);*/
 	system("pause");
 }
